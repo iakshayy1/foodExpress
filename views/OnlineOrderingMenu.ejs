@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" id="site-html" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<title>Simply Siam Restaurant - Maryville, MO 6468 (Menu &amp; Order Online)</title>
+
+	<link rel="stylesheet" type="text/css" href="/OnlineOrdermenu.css">
+	<!-- <link href="OnlineOrdermenu.css" rel="stylesheet" /> -->
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		.panel-heading,
+		#expand-all,
+		#bannerr-image,
+		.rewards {
+			border-radius: 0;
+		}
+
+		.navigation-link:hover {
+			background-color: #666;
+		}
+
+		#social-links a {
+			color: #555;
+			padding: 9px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin: 2px;
+		}
+
+		#social-links {
+			margin-bottom: 0;
+		}
+
+		#social-links a:hover {
+			background-color: #ccc;
+		}
+
+		.btn {
+			border-radius: 2px;
+		}
+
+		.well {
+			border-radius: 2px;
+		}
+
+		#home-section-description {
+			border-radius: 2px !important;
+		}
+
+		#home-hours {
+			margin-bottom: 0;
+		}
+
+		#home-section-name {
+			margin-top: 10px;
+		}
+
+		#home-section {
+			margin-top: 52px;
+			padding-top: 0 !important;
+		}
+
+		#home-section-votes {
+			margin-bottom: 0;
+		}
+
+		#location-details {
+			border-radius: 2px !important;
+		}
+
+		#TopNavCollapse .navmobile {
+			border-radius: 2px;
+		}
+
+		@media (max-width: 767px) {
+			#navigation {
+				border-radius: 0;
+			}
+			#home-section {
+				margin-top: 0px;
+			}
+		}
+
+		#site-body {
+			background: url(https://bloximages.chicago2.vip.townnews.com/maryvilledailyforum.com/content/tncms/assets/v3/editorial/d/e8/de855fd2-d192-11e5-9e2e-f705bbee4583/56bde96bd477e.image.jpg?resize=1200%2C900) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			/*background-position-y: 10px*/
+		}
+
+		#location-details {
+			background-color: #fff;
+			padding: 0 10px 10px 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+
+		#home-section-name {
+			color: #000;
+		}
+
+		#site-body {
+			color: #fff;
+		}
+
+		#site-container {
+			background-color: #fff;
+			background-color: rgba(255, 255, 255, 0.9);
+		}
+
+		#site-body {
+			background-color: #000000;
+		}
+
+		.panel-default>.menu-category-heading,
+		#expand-all {
+			background-color: #b60000e6;
+		}
+
+		.menu-category-name,
+		#expand-all {
+			color: #000000;
+		}
+
+		.menu-category-description {
+			color: #ffffff;
+		}
+
+		#bannerr-image {
+			margin: 0 auto;
+			float: none;
+			padding: 40px;
+			opacity: 0.9;
+
+
+		}
+
+/********************** css for side nav or cart page **************/
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.slideBtn {
+  transition: .5s;
+  position: fixed;
+  right: 0;  
+  font-size:30px;
+  cursor:pointer;
+  margin-right:10px;
+}
+
+#main {
+  transition: .5s;  
+  background-color:white;
+}
+
+section{
+  padding:20px;
+}
+section+section{
+  padding-top:0;
+}
+
+article{  
+  border-top:1px solid green;
+  background-color:gray;
+}
+
+
+
+
+/***********************************************************************/
+
+
+
+
+
+
+	</style>
+
+
+	<script type="text/javascript" src="/OnlineOrderingMenu.js"></script>
+</head>
+
+<body id="site-body" role="document" >
+
+
+<!-- ************** for side nav ************* -->
+<script>
+
+$(document).ready(function(){
+  $(".slideBtn").click(function(){    
+    if($("#sidenav").width() == 0){      
+        document.getElementById("sidenav").style.width = "250px";
+        document.getElementById("site-body").style.paddingRight = "250px";
+        document.getElementById("slidebtn").style.paddingRight = "250px";
+
+    }
+    else{
+        document.getElementById("sidenav").style.width = "0";
+        document.getElementById("site-body").style.paddingRight = "0";
+        document.getElementById("slidebtn").style.paddingRight = "0";
+    }
+  });
+});
+
+</script>
+<!-- ******************************************************** -->
+
+
+<div id="sidenav" class="sidenav">
+  <div id="slidebtn" class="slideBtn">&#9776; Click</div>  
+  <a href="#">menu1</a>
+  <a href="#">menu2</a>
+  <a href="#">menu3</a>
+  <a href="#">menu4</a>
+</div>
+
+
+
+
+	
+	<div class="navigator" style="opacity: 1.25; transform: matrix(1, 0, 0, 1, 0, 0);"> </div>
+
+ <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"> Simply Siam</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/index">Home</a>
+                </li>
+                <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Menu
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/menu">Dine-in</a>
+                        </li>
+                        <li>
+                            <a href="/menu">Pick up</a>
+                        </li>
+                        <li>
+                            <a href="/menu">Delivery</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="/login">Login</a>
+                </li>
+                 <li><a href="/contact">Contact</a></li>
+                 <li><a href="/OnlineOrderingMenu">OnlineOrderingMenu</a></li>
+                 <li> </li>
+            </ul>
+            
+        </div>
+    </nav>
+    <img id="bannerr-image" class="img-responsive img-rounded center-block-xs" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+	 data-src="Simply siam logo.png" />
+
+    
+	</div>
+	</nav>
+
+
+	<div id="wrapper">
+
+		<div id="page-content-wrapper">
+
+			<!-- <img id="bannerr-image" class="img-responsive img-rounded center-block-xs" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="Simply siam logo.png" /> -->
+
+			<div id="site-container" class="container-fluid theme-showcase" role="main" itemscope itemtype="http://schema.org/Restaurant">
+
+
+				<!-- <div id="bannerr" class="row page-header">
+						<img id="bannerr-image" class="img-responsive img-rounded center-block-xs" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="Simply siam logo.png" />
+				</div> -->
+				<div id="topContent" class="col-xs-12">
+					<a href="/Home/ContactUs" class="btn btn-default visible-xs" data-toggle="modal" data-target="#ItemModal">
+						<i class="fa fa-map-marker fa-fw"></i> 14319 Metcalf Ave, Maryville, KS 66223
+					</a>
+
+
+
+				</div>
+				
+************************************
+<style>
+
+	.sidenav {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  right: 0;
+	  background-color: #111;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
+	}
+	
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+	
+	.slideBtn {
+	  transition: .5s;
+	  position: fixed;
+	  right: 0;  
+	  font-size:30px;
+	  cursor:pointer;
+	  margin-right:10px;
+	}
+	
+	#main {
+	  transition: .5s;  
+	  background-color:white;
+	}
+	
+	section{
+	  padding:20px;
+	}
+	section+section{
+	  padding-top:0;
+	}
+	
+	article{  
+	  border-top:1px solid green;
+	  background-color:gray;
+	}
+	</style>
+	
+	</head>
+	<body id ="main">
+	
+	<script>
+	
+	$(document).ready(function(){
+	  $(".slideBtn").click(function(){    
+		if($("#sidenav").width() == 0){      
+			document.getElementById("sidenav").style.width = "250px";
+			document.getElementById("main").style.paddingRight = "250px";
+			document.getElementById("slidebtn").style.paddingRight = "250px";
+	
+		}
+		else{
+			document.getElementById("sidenav").style.width = "0";
+			document.getElementById("main").style.paddingRight = "0";
+			document.getElementById("slidebtn").style.paddingRight = "0";
+		}
+	  });
+	});
+	
+	</script>
+	
+	<div >
+	  <h2>LUNCH NOODLES</h2>
+	  <p>Click on the button to toggle between showing and hiding content.</p>
+	  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">LUNCH NOODLES</button>
+	  <div id="demo" class="collapse">
+		
+	
+	
+	<div>
+					  <a onclick="clck-menu-item" role="button" class="btn btn-default col-xs-12" >
+						<span>Pad Thai</span>
+						<small >Our must-try namesake includes rice noodles stir-fried with egg, peanuts, sprouts, scallions and coated in our
+						  special savory sauce</small>
+						<span >$9.95</span>
+	
+	
+						<p>Click the button to make a BUTTON element.</p>
+	
+	<button onclick="clck-menu-item()">Try it</button>
+	
+	<script>
+	function myFunction() {
+	  var node = document.createElement("p");
+	  var textnode = document.createTextNode("Water");
+	  
+	
+	}
+	</script>
+	
+					  </a>
+					  <a role="button" class="btn btn-default col-xs-12 menu-item"  data-target="#ItemModal">
+						<span class="menu-item-name">Pad Kee Mow</span>
+						<small class="menu-item-description">Wide rice noodles are stir-fried with bell peppers, mushrooms, bok choy, and fresh basil in a tasty brown sauce</small>
+						<span class="menu-item-price">$9.95</span>
+					  </a>
+					  <a href="/padseaeawclicked" role="button" class="btn btn-default col-xs-12 menu-item" data-target="#ItemModal">
+						<span class="menu-item-name">Pad Sea Eaw</span>
+						<small class="menu-item-description">Wide rice noodles stir-fried with broccoli and bok choy come together beautifully in a brown sauce</small>
+						<span class="menu-item-price">$9.95</span>
+					  </a>
+					  <a href="/Item/324698/17995" role="button" class="btn btn-default col-xs-12 menu-item" data-toggle="modal" data-target="#ItemModal">
+						<span class="menu-item-name">Sen Mee Pad </span>
+						<small class="menu-item-description">Extra thin rice noodles are cooked with napa cabbage, bok choy, bamboo strips, roasted garlic then lightly tossed
+						  in a brown sauce</small>
+						<span class="menu-item-price">$9.95</span>
+					  </a>
+					  <a href="/Item/123821/17995" role="button" class="btn btn-default col-xs-12 menu-item" data-toggle="modal" data-target="#ItemModal">
+						<span class="menu-item-name">Pad Lad Nah</span>
+						<small class="menu-item-description">Wide rice noodles are tossed in a light brown sauce then topped with a stir-fried, velvety blend of fermented yellow
+						  bean sauce, broccoli, bok choy, and sauteed garlic</small>
+						<span class="menu-item-price">$9.95</span>
+					  </a>
+					  <a href="/Item/324699/17995" role="button" class="btn btn-default col-xs-12 menu-item" data-toggle="modal" data-target="#ItemModal">
+						<span class="menu-item-name">Tom Yum Noodle</span>
+						<small class="menu-item-description">A Thai street vendor favorite, this rich, spicy sauce and classic combination of shrimp and pork is served over
+						  rice noodles and garnished with cilantro and green onion</small>
+						<span class="menu-item-price">$9.95</span>
+					  </a>
+	
+					</div>
+				  </div>
+				</div>
+	
+	
+	
+	
+	  </div>
+	</div>
+	
+	
+	
+*************************************
+
+				<aside>
+				
+				</aside>
+				<div id="home-section" class="col-xs-12 col-sm-4 top-buffer">
+					<div id="location-details" class="">
+						<h1 id="home-section-name" itemprop="name">Simply Siam Restaurant</h1>
+						<span id="home-section-description" itemprop="description"></span>
+					</div>
+
+					<div id="home-section-address" class="top-buffer" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						<a href="/Home/ContactUs" class="btn btn-default btn-block" data-toggle="modal" data-target="#ItemModal">
+							<i class="fa fa-map-marker fa-fw"></i>
+							<span itemprop="streetAddress">14319 Metcalf Ave</span>
+							<br>
+							<span itemprop="addressLocality">Maryville</span>,
+							<span itemprop="addressRegion">MO</span>
+							<span itemprop="postalCode">64468</span>
+							<span itemprop="addressCountry" class="hidden">USA</span>
+						</a>
+					</div>
+
+					<div id="home-section-phone" class="top-buffer">
+						<a href="tel:(913) 685-4500" class="btn btn-default btn-block" itemprop="telephone" content="(913) 685-4500">
+							<i class="fa fa-phone fa-fw"></i> (913) 685-4500</a>
+					</div>
+
+					<div id="home-section-votes" class="top-buffer well" itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating">
+						<meta itemprop="ratingValue" content="99">
+						<meta itemprop="reviewCount" content="306">
+						<meta itemprop="bestRating" content="100">
+						<meta itemprop="worstRating" content="0">
+						<h4>
+							<i class="fa fa-thumbs-o-up fa-fw"></i> 99%</h4> of 306 customers recommended
+					</div>
+
+					<div id="home-hours" class="well top-buffer">
+						<div>
+
+							<div id="hours-header" class="hours-title">Hours of Business</div>
+							<div id="hours-list" class="hours-list">
+								<div class="hours-entry">
+									<div class="hours-day">
+										Sunday </div>
+
+									<div class="hours-time">
+										12:00 PM - 9:00 PM
+										<span class="hidden" itemprop="openingHours">Su 12:00-21:00</span>
+									</div>
+								</div>
+								<div class="hours-entry">
+									<div class="hours-day">
+										Monday - Saturday </div>
+
+									<div class="hours-time">
+										11:00 AM - 10:00 PM
+										<span class="hidden" itemprop="openingHours">Mo,Tu,We,Th,Fr,Sa 11:00-22:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					
+				</div>
+				<footer id="footer" class="col-xs-12">
+					<hr />
+					<div id="footer-copyright">&copy; 2018
+						<a href=t arget="_blank">Simplysiam.com</a> All rights reserved.</div>
+					<div id="footer-links">
+						<a href="https://Simplysiam/privacy-policy.html" target="_blank">Privacy Policy</a> &#124;
+						<a href="https://Simplysiam.com/customer-faq" target="_blank">FAQ</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+	</div>
+	<!-- /#wrapper -->
+
+	<div class="modal fade" id="ItemModal" tabindex="-1" role="dialog" aria-labelledby="ItemModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;
+						</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<h4>Loading...</h4>
+				</div>
+				<div class="modal-body">
+					<div class="text-center">
+						<i class="fa fa-spinner fa-spin fa-2x"></i>
+					</div>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
